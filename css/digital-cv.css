@@ -1,0 +1,47 @@
+ /* Global styles */
+.container,
+.col,
+.row {
+  height: 100%vp;
+}
+
+/* Specific styles */
+.big {
+  margin: 50px auto !important;
+  padding: 0 !important;
+}
+
+.timeline {
+  padding: 0 12px;
+}
+
+.in,
+.out {
+  border: none;
+}
+
+.borderBottom {
+  border-bottom: 1px solid rgb(205, 205, 205);
+}
+
+.borderBottomBold {
+  border-bottom: 3px solid rgb(205, 205, 205);
+}
+
+.blueBorder {
+  box-sizing: border-box;
+  border: 10px solid blue;
+}
+
+.icon {
+  align-self: center;
+}
+
+h1 {
+  color: blue !important;
+  padding: 20px;
+}
+
+p {
+  font-size: small;
+}

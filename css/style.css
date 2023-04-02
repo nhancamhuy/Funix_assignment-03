@@ -1,0 +1,361 @@
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+i {
+    color: #199cdb;
+}
+.bg-grey {
+    background: #f7f7f7;
+    margin: auto;
+}
+/* phong nen 2 mau */
+.bg-2colors {
+    background: linear-gradient(to right, 
+    #f7f7f7 0%, #f7f7f7 50%, 
+    #f1f1f1 50%, #f1f1f1 100%);
+    margin: 0 auto;
+}
+section > .container{
+    width: 1170px;
+    margin: auto;
+}
+h1 {
+    font-size: 35px;
+}
+.avatar {
+    width: 150px;
+    border: #ffffff solid 10px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    position: relative;
+    justify-self: center;
+    top: 350px;
+}
+
+/* anh banner */
+.banner-img {
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: left top;
+    grid-column: 1 / 4;
+    grid-row: 1 / 5;
+    filter: brightness(50%);
+}
+#banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+#banner .name-title {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    line-height: 33px;
+    justify-self: left;
+}
+
+
+/* thanh navigation */
+#nav-bar .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 300px 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+#nav-bar {
+    text-align: center;
+    border-top: rgb(200, 200, 200) 1px solid;
+    border-bottom: rgb(200, 200, 200) 1px solid;
+}
+#nav-bar a {
+    text-transform: uppercase;
+    color: gray;
+}
+.div1, .div2, .div3, .div4, .div5 {
+    border-left: rgb(200, 200, 200) 1px solid;
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div5 {
+    border-right: rgb(200, 200, 200) 1px solid;
+}
+
+
+/* muc tieu nghe nghiep-thong tin ca nhan */
+#about p, #about ul {
+    color: gray;
+}
+#about >* {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+#about {
+    padding: 70px;
+}
+#about #target {
+    width: 400px;
+    text-align: justify;
+}
+#about li {
+    list-style-type: none;
+}
+#about span {
+    font-weight: bold;
+}
+#about h1 {
+    margin-bottom: 30px;
+}
+#about ul {
+    margin-bottom: 20px;
+    padding-left: 0px;
+}
+
+/* cac bang thong tin */
+#job-info .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.exp, .edu, .act, .hobby, .lang, .skill {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto auto;
+    align-content: start;
+    row-gap: 20px;
+    border: rgb(200, 200, 200) 1px solid;
+    padding: 25px;
+}
+#job-info h1 {
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+#job-info ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 20px;
+}
+#job-info .job-description {
+    list-style-type: "- ";
+    margin-left: 20px;
+}
+.time span{
+    font-style: italic;
+    background-color: #199cdb;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+}
+.cpname {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.exp .job-description, .edu .job-description, 
+.act .job-description, .hobby p, 
+.lang p, .skill p {
+    color: gray;
+}
+
+
+.exp ul, .edu ul, .act ul, .skill div, .lang div, .hobby-list {
+    grid-column: 1 / 3;
+}
+.hobby-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    justify-items: center;
+}
+.hobby-list i {
+    border: #199cdb 1px solid;
+    border-radius: 50%;
+}
+.hobby-list p {
+    margin-top: 15px;
+}
+.hobby-list .ic-strategy {
+    padding: 10px 15px 10px 15px;
+    font-size: 20px;
+}
+.hobby-list .ic-hotairballoon {
+    padding: 10px 13px 10px 13px;
+    font-size: 20px;
+}
+.hobby-list .ic-megaphone {
+    padding: 10px 9px 10px 9px;
+    font-size: 20px;
+}
+.hobby-list .ic-basket {
+    padding: 10px 8px 10px 8px;
+    font-size: 20px;
+}
+.exp .ic-toolbox, .edu .ic-pencil, 
+.act .ic-toolbox, .hobby .ic-telescope, 
+.lang .ic-mic, .skill .ic-tools-2 {
+    font-size: 40px;
+    color: grey;
+}
+
+
+.lang h1 {
+    margin-bottom: 20px;
+}
+.eng.span1, .eng.span2, .jap.span1, 
+.html.span1, .html.span2, .html.span3, 
+.jvs.span1, .jvs.span2, 
+.njs.span1, .njs.span2, .njs.span3, 
+.boos.span1 {
+    background: #199cdb;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+}
+.eng.span3, .jap.span2, .jap.span3,
+.jvs.span3, 
+.boos.span2, .boos.span3 {
+    background: gray;
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    width: 45px;
+}
+.eng.span1, .eng.span2, .eng.span3 {
+    margin: 10px 3px 10px 3px;
+}
+
+#certificate img {
+    width: 100%;
+}
+#certificate .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    border-bottom: #d6c08d solid 1px;
+}
+.cer2 {
+    border-left: #d6c08d solid 1px;
+    padding-left: 20px;
+}
+.cer3 img {
+    margin-bottom: 30px;
+}
+#certificate h1 {
+    grid-column: 1 / 3;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+#certificate div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#certificate ul {
+    padding-left: 20px;
+}
+#certificate li {
+    list-style-type: "- ";
+    color: gray;
+}
+#certificate p {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#project img {
+    width: 100%;
+}
+#project .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+#project h1 {
+    grid-column: 1 / 4;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.proj-position {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+}
+.proj-title {
+    padding: 20px;
+}
+.proj-sum {
+    border: rgb(200, 200, 200) solid 1px;
+}
+.proj1, .proj2, .proj3 {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+}
+.proj1 td, .proj2 td, .proj3 td {
+    vertical-align: top;
+    padding: 20px 15px 20px 10px;
+}
+.proj1 td, .proj2 td, .proj3 td {
+    text-align: justify;
+}
+.proj1 td:nth-of-type(1), .proj2 td:nth-of-type(1), .proj3 td:nth-of-type(1) {
+    width: 80px;
+}
+.proj-title, .proj-position {
+    border-bottom: rgb(200, 200, 200) solid 1px;
+    color: gray;
+}
+.proj-table {
+    border-collapse: collapse;
+    color: gray;
+}
+.proj1 tr:nth-child(1), .proj2 tr:nth-child(1), .proj3 tr:nth-child(1) {
+    height: 75px;
+    border-bottom: rgb(200, 200, 200) solid 1px;
+}
+.proj1 tr:nth-child(3), .proj2 tr:nth-child(3), .proj3 tr:nth-child(3) {
+    border-top: rgb(200, 200, 200) solid 1px;
+}
+.proj-title {
+    font-weight: bold;
+}
+#project i {
+    color: grey;
+}
+
+/* footer */
+#footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    list-style-type: none;
+    justify-items: center;
+    justify-content: center;
+}
+#footer div {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+}
+#footer .container {
+    padding: 100px;
+}
+#footer i {
+    font-size: 30px;
+}
+#footer a {
+    color: gray;
+}

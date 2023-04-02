@@ -1,0 +1,13 @@
+@media screen and (max-width: 992px) {
+    .goals, .members, .primary, .timeline {
+        display: grid !important;
+        grid-template-rows: auto auto !important;
+    }
+    .flag {
+        justify-self: center !important;
+    }
+    .in-out {
+        display: grid !important;
+        grid-template-rows: auto auto !important;
+    }
+}
